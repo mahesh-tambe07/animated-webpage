@@ -1,0 +1,15 @@
+.dark-animated-bg {
+  background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
+  animation: backgroundPulse 20s ease-in-out infinite;
+}
+
+@keyframes backgroundPulse {
+  0%, 100% {
+    background-position: center;
+    filter: brightness(1);
+  }
+  50% {
+    background-position: top;
+    filter: brightness(1.2);
+  }
+}
